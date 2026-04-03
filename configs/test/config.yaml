@@ -1,0 +1,17 @@
+environment: testing
+debug: true
+log_level: DEBUG
+azure:
+  use_mock: true
+  timeout: 15
+foundry:
+  endpoint: http://localhost:8000
+  verify_ssl: false
+evaluation:
+  timeout: 60
+  batch_size: 5
+cache:
+  enabled: false
+testing:
+  fixtures_path: ./tests/fixtures
+  data_path: ./tests/fixtures/data

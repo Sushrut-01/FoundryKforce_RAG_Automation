@@ -1,0 +1,15 @@
+environment: development
+debug: true
+log_level: DEBUG
+azure:
+  use_mock: false
+  timeout: 30
+foundry:
+  endpoint: http://localhost:8000
+  verify_ssl: false
+evaluation:
+  timeout: 300
+  batch_size: 10
+cache:
+  enabled: true
+  ttl: 3600

@@ -535,6 +535,37 @@ foundry-playready-rag-testing/
     └── framework.log
 ```
 
+### Optional Folders (Can Add Later)
+
+These folders are optional and can be created when needed for enhanced functionality:
+
+```
+📂 src/agents/                           # Optional - Agent implementations
+   └─ Can add custom agents here
+
+📂 src/utils/                            # Optional - Utility functions
+   └─ Can add helper functions here
+
+📂 tests/unit/                           # Optional - Unit tests
+   └─ Can add unit test files here
+
+📂 tests/fixtures/                       # Optional - Test fixtures
+   └─ Can add test data and fixtures here
+```
+
+### Optional Configuration Files
+
+Configuration files for different environments:
+
+```
+⚠️ configs/dev/config.yaml               # Optional - Development config
+⚠️ configs/prod/config.yaml              # Optional - Production config
+⚠️ configs/test/config.yaml              # Optional - Test config
+✅ configs/local/config.yaml             # Present - Local environment config
+```
+
+**Note:** The `configs/local/config.yaml` is already present and sufficient for basic usage. Other config files can be created when deploying to multiple environments (dev, prod, test stages).
+
 ---
 
 ## 🔄 Workflow

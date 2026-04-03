@@ -1,0 +1,23 @@
+environment: production
+debug: false
+log_level: INFO
+azure:
+  use_mock: false
+  timeout: 60
+  retry_count: 3
+foundry:
+  endpoint: https://foundry.production.com
+  verify_ssl: true
+  timeout: 120
+evaluation:
+  timeout: 600
+  batch_size: 50
+cache:
+  enabled: true
+  ttl: 86400
+monitoring:
+  enabled: true
+  alert_email: admin@example.com
+security:
+  encryption: true
+  tls_version: "1.2"
