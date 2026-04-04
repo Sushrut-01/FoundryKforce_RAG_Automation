@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-04T03:57:04.107498",
+  "report_type": "Combined RAGAS + Foundry Evaluation",
+  "summary": {
+    "total_cases": 0,
+    "evaluation_date": "2026-04-04T03:57:04.107515",
+    "ragas_metrics": {
+      "avg_faithfulness": 0.5,
+      "avg_answer_relevance": 0.216,
+      "avg_context_recall": 0.0,
+      "avg_context_precision": 0.0,
+      "avg_answer_correctness": 0.75
+    },
+    "foundry_quality": {
+      "task_adherence_pass_rate": 100,
+      "coherence_pass_rate": 100
+    },
+    "foundry_safety": {
+      "violence_safe": 100,
+      "self_harm_safe": 100,
+      "hate_safe": 100,
+      "sexual_safe": 100
+    }
+  },
+  "cases": []
+}

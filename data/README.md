@@ -1,4 +1,4 @@
-# Data Documentation
+﻿# Data Documentation
 
 ## Overview
 
@@ -6,8 +6,8 @@ This directory contains all test data, evaluation datasets, and expected respons
 
 ## Files
 
-### test_cases.json
-**Description:** Original 100 test cases for PlayReady QA evaluation
+### `raw/test_cases.json`
+**Description:** Original 100 test cases for PlayReady QA evaluation.
 
 **Format:**
 ```json
@@ -28,74 +28,42 @@ This directory contains all test data, evaluation datasets, and expected respons
 }
 ```
 
-**Categories:**
-- `general` - General PlayReady concepts
-- `implementation` - Implementation and deployment
-- `troubleshooting` - Problem resolution
-- `advanced` - Advanced features and scenarios
+### `raw/playready_kb.pdf` / `raw/playready_kb.txt`
+**Description:** Source knowledge base used to populate RAG context locally.
 
-**Difficulty Levels:**
-- `easy` - Basic concepts
-- `medium` - Intermediate knowledge
-- `hard` - Advanced topics
+### `processed/test_cases_formatted.json`
+**Description:** Generated evaluation-ready test cases with `query`, `response`, and `metadata`.
 
-### test_cases_formatted.json
-**Description:** Test cases formatted for Foundry SDK evaluation (GENERATED)
+### `processed/test_cases_with_kb.json`
+**Description:** Formatted test cases enriched with KB context chunks.
 
-**Format:** JSON array with Foundry SDK structure
-```json
-[
-  {
-    "query": "What is PlayReady?",
-    "response": "PlayReady is Microsoft's digital rights management...",
-    "context": [],
-    "metadata": {
-      "id": 1,
-      "category": "general",
-      "difficulty": "easy"
-    }
-  }
-]
-```
+### `processed/test_cases_smoke.json`
+**Description:** Small subset for quick smoke validation runs.
 
-**Status:** ✅ 100/100 cases Foundry SDK compliant
+### `processed/test_cases_regression.json`
+**Description:** Larger subset for regression testing.
 
-### test_queries.json
-**Description:** Additional query dataset for testing
-
-**Usage:** Extended test queries for performance and scalability testing
-
-### expected_responses.json
-**Description:** Baseline expected responses for evaluation
-
-**Format:**
-```json
-{
-  "1": "PlayReady is a comprehensive DRM solution...",
-  "2": "PlayReady protects video and audio content..."
-}
-```
-
-**Purpose:** Serves as baseline for response quality evaluation
+### `archived/`
+**Description:** Timestamped snapshots of previous test input files created automatically before new runs.
 
 ## Data Generation Pipeline
 
 ### Step 1: Response Generation
 ```bash
 python scripts/generate_responses.py
-→ Output: results/responses.json
+â†’ Output: artifacts/latest/responses.json
 ```
 
 ### Step 2: Format Merging
 ```bash
 python scripts/merge_responses_into_testcases.py
-→ Output: data/test_cases_formatted.json
+â†’ Output: data/processed/test_cases_formatted.json
 ```
 
 ### Step 3: Validation
 ```bash
 python scripts/validate_test_cases.py
-→ Validates Foundry SDK compliance
+â†’ Validates Foundry SDK compliance
 ```
 
 ## Test Distribution
@@ -157,20 +125,20 @@ python scripts/validate_test_cases.py
 ## Data Quality
 
 ### Validation Checklist
-- ✅ All queries are unique
-- ✅ All queries are non-empty
-- ✅ Categories are valid
-- ✅ Difficulty levels are consistent
-- ✅ Expected keywords are relevant
-- ✅ 100 test cases total
+- âœ… All queries are unique
+- âœ… All queries are non-empty
+- âœ… Categories are valid
+- âœ… Difficulty levels are consistent
+- âœ… Expected keywords are relevant
+- âœ… 100 test cases total
 
 ### Foundry SDK Compliance
 ```
-✅ query field: present and non-empty
-✅ response field: present for all cases
-✅ context field: present for all cases
-✅ metadata: preserved and accessible
-→ Status: READY FOR EVALUATION
+âœ… query field: present and non-empty
+âœ… response field: present for all cases
+âœ… context field: present for all cases
+âœ… metadata: preserved and accessible
+â†’ Status: READY FOR EVALUATION
 ```
 
 ## Usage Examples
@@ -179,7 +147,7 @@ python scripts/validate_test_cases.py
 ```python
 import json
 
-with open("data/test_cases.json") as f:
+with open("data/raw/test_cases.json") as f:
     test_data = json.load(f)
     
 for test_case in test_data["test_cases"]:
@@ -192,7 +160,7 @@ for test_case in test_data["test_cases"]:
 ```python
 import json
 
-with open("data/test_cases_formatted.json") as f:
+with open("data/processed/test_cases_formatted.json") as f:
     formatted_cases = json.load(f)
     
 for case in formatted_cases:
@@ -203,11 +171,11 @@ for case in formatted_cases:
 
 ## Data Backup
 
-Backups are maintained in `test_cases_archive/` directory.
+Backups are maintained in `data/archived/` directory.
 
 To restore from backup:
 ```bash
-cp test_cases_archive/test_cases_backup_YYYYMMDD.json data/test_cases.json
+cp data/archived/test_cases_backup_YYYYMMDD.json data/raw/test_cases.json
 ```
 
 ## Related Resources
@@ -221,3 +189,5 @@ cp test_cases_archive/test_cases_backup_YYYYMMDD.json data/test_cases.json
 Last Updated: April 2026
 File Count: 4 core data files
 Test Cases: 100 (all Foundry SDK compliant)
+
+

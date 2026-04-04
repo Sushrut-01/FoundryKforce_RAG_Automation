@@ -1,4 +1,4 @@
-# Optional Source Code Folders
+﻿# Optional Source Code Folders
 
 ## src/agents/
 Optional folder for custom agent implementations. Use this to add specialized agents for:
@@ -22,3 +22,5 @@ touch src/agents/my_agent.py
 # Create new utility
 touch src/utils/my_utils.py
 ```
+
+

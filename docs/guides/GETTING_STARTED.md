@@ -1,4 +1,4 @@
-# Getting Started Guide
+﻿# Getting Started Guide
 
 ## Installation & Setup
 
@@ -76,11 +76,11 @@ Expected output:
 ======================================================================
 Generating responses for 100 test queries...
 ======================================================================
-✓ Generated response 10/100: ...
-✓ Generated response 20/100: ...
+âœ“ Generated response 10/100: ...
+âœ“ Generated response 20/100: ...
 ...
-✅ Generated 100 responses
-✅ Saved to: results/responses.json
+âœ… Generated 100 responses
+âœ… Saved to: artifacts/latest/responses.json
 ```
 
 **2. Merge responses into Foundry SDK format:**
@@ -90,10 +90,10 @@ python scripts/merge_responses_into_testcases.py
 
 Expected output:
 ```
-✅ All cases passed Foundry SDK format validation
-✅ Formatted 100 test cases
-✅ Saved to: data/test_cases_formatted.json
-Status: READY FOR FOUNDRY SDK ✓
+âœ… All cases passed Foundry SDK format validation
+âœ… Formatted 100 test cases
+âœ… Saved to: data/processed/test_cases_formatted.json
+Status: READY FOR FOUNDRY SDK âœ“
 ```
 
 **3. Validate format compliance:**
@@ -104,12 +104,12 @@ python scripts/validate_test_cases.py
 Expected output:
 ```
 Total test cases: 100
-With 'query' field: 100/100 ✓
-With 'response' field: 100/100 ✓
-With 'context' field: 100/100 ✓
+With 'query' field: 100/100 âœ“
+With 'response' field: 100/100 âœ“
+With 'context' field: 100/100 âœ“
 Valid cases (all required fields): 100/100
 
-✅ ALL 100 CASES PASS FOUNDRY SDK CRITERIA ✅
+âœ… ALL 100 CASES PASS FOUNDRY SDK CRITERIA âœ…
 ```
 
 ### Run Integration Tests
@@ -126,9 +126,9 @@ pytest tests/integration/test_playready_qa.py::test_response_generation -v
 
 ### Run Evaluation
 
-**Full evaluation with Azure KB:**
+**Full evaluation pipeline:**
 ```bash
-python scripts/foundry_evaluate_with_azure_kb.py
+python scripts/run_full_evaluation.py --suite full
 ```
 
 **Upload results to Foundry:**
@@ -138,16 +138,21 @@ python scripts/upload_to_foundry.py
 
 ## Project Structure Guide
 
-### data/
+### data/raw/
 - `test_cases.json` - Original 100 test cases
-- `test_cases_formatted.json` - Foundry SDK compliant format (generated)
-- `test_queries.json` - Query dataset
+- `playready_kb.pdf` / `playready_kb.txt` - Source knowledge base
+
+### data/processed/
+- `test_cases_formatted.json` - Evaluation-ready dataset
+- `test_cases_with_kb.json` - Dataset enriched with KB context
+- `test_cases_smoke.json` - Small smoke-test subset
+- `test_cases_regression.json` - Regression subset
 
 ### scripts/
-- `generate_responses.py` - LLM response generation
+- `generate_responses.py` - Response generation helper
 - `validate_test_cases.py` - Format validation
 - `merge_responses_into_testcases.py` - Data merging
-- `foundry_evaluate_with_azure_kb.py` - Main evaluation runner
+- `run_full_evaluation.py` - Main evaluation runner
 - `upload_to_foundry.py` - Foundry platform upload
 
 ### src/
@@ -161,7 +166,7 @@ python scripts/upload_to_foundry.py
 - `integration/` - Integration tests
 - `fixtures/` - Test data and fixtures
 
-### results/
+### artifacts/latest/
 - `responses.json` - Generated responses
 - Evaluation output files (generated)
 
@@ -185,7 +190,7 @@ python scripts\validate_test_cases.py
 
 ### Task 4: Run Full Evaluation
 ```bash
-python scripts\foundry_evaluate_with_azure_kb.py
+python scripts\run_full_evaluation.py --suite full
 ```
 
 ### Task 5: Upload to Foundry
@@ -232,12 +237,12 @@ curl https://your-kb.cognitiveservices.azure.com/
 
 ## Next Steps
 
-1. ✅ Generate test responses
-2. ✅ Validate Foundry SDK format
-3. ✅ Run integration tests
-4. ✅ Execute full evaluation
-5. ✅ Upload results to Foundry
-6. ✅ Review and analyze results
+1. âœ… Generate test responses
+2. âœ… Validate Foundry SDK format
+3. âœ… Run integration tests
+4. âœ… Execute full evaluation
+5. âœ… Upload results to Foundry
+6. âœ… Review and analyze results
 
 ## Additional Resources
 
@@ -250,3 +255,5 @@ curl https://your-kb.cognitiveservices.azure.com/
 **Support:** For issues, check repository issues or contact the development team.
 
 Last Updated: April 2026
+
+

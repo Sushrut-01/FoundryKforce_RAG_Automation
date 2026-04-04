@@ -154,9 +154,9 @@ def main():
     
     base_path = Path(__file__).parent.parent
     
-    test_cases_path = base_path / "data" / "test_cases.json"
-    responses_path = base_path / "results" / "responses.json"
-    output_path = base_path / "data" / "test_cases_formatted.json"
+    test_cases_path = base_path / "data" / "raw" / "test_cases.json"
+    responses_path = base_path / "artifacts" / "latest" / "responses.json"
+    output_path = base_path / "data" / "processed" / "test_cases_formatted.json"
     
     formatted_cases = merge_responses_into_testcases(
         test_cases_path,

@@ -1,0 +1,512 @@
+[
+  {
+    "query": "Who uses PlayReady?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 5,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "high",
+      "expected_keywords": [
+        "companies",
+        "enterprise",
+        "streaming",
+        "providers"
+      ]
+    }
+  },
+  {
+    "query": "What companies use PlayReady?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 10,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "high",
+      "expected_keywords": [
+        "companies",
+        "enterprise",
+        "use",
+        "adoption"
+      ]
+    }
+  },
+  {
+    "query": "What is PlayReady certificate?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 20,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "high",
+      "expected_keywords": [
+        "certificate",
+        "public",
+        "key",
+        "security"
+      ]
+    }
+  },
+  {
+    "query": "What is PlayReady Individualization?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 35,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "high",
+      "expected_keywords": [
+        "individualization",
+        "device",
+        "unique",
+        "identify"
+      ]
+    }
+  },
+  {
+    "query": "Does iOS support PlayReady?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 45,
+      "category": "compatibility",
+      "difficulty": "easy",
+      "priority": "high",
+      "expected_keywords": [
+        "iOS",
+        "iPhone",
+        "Apple",
+        "support"
+      ]
+    }
+  },
+  {
+    "query": "Does PlayReady support HLS?",
+    "response": "PlayReady protects video and audio content through encryption and licensing mechanisms. It ensures that only authorized users can access premium content, and usage rights can be defined per user or device. PlayReady also provides secure streaming capabilities and supports offline content delivery with time-limited access.",
+    "context": [],
+    "metadata": {
+      "id": 65,
+      "category": "compatibility",
+      "difficulty": "easy",
+      "priority": "high",
+      "expected_keywords": [
+        "HLS",
+        "streaming",
+        "protocol",
+        "support"
+      ]
+    }
+  },
+  {
+    "query": "What is PlayReady roadmap?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 80,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "high",
+      "expected_keywords": [
+        "roadmap",
+        "future",
+        "plan",
+        "feature"
+      ]
+    }
+  },
+  {
+    "query": "How to integrate PlayReady API?",
+    "response": "PlayReady protects video and audio content through encryption and licensing mechanisms. It ensures that only authorized users can access premium content, and usage rights can be defined per user or device. PlayReady also provides secure streaming capabilities and supports offline content delivery with time-limited access.",
+    "context": [],
+    "metadata": {
+      "id": 15,
+      "category": "implementation",
+      "difficulty": "medium",
+      "priority": "high",
+      "expected_keywords": [
+        "integrate",
+        "API",
+        "connect",
+        "endpoint"
+      ]
+    }
+  },
+  {
+    "query": "How to issue PlayReady license?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 25,
+      "category": "licensing",
+      "difficulty": "medium",
+      "priority": "high",
+      "expected_keywords": [
+        "issue",
+        "grant",
+        "license",
+        "procedure"
+      ]
+    }
+  },
+  {
+    "query": "How to manage multiple licenses?",
+    "response": "Implementing PlayReady involves integrating the PlayReady SDK into your application, configuring licensing rules, setting up content encryption, and managing key distribution. The exact implementation steps depend on your platform (web, mobile, desktop) and content delivery method.",
+    "context": [],
+    "metadata": {
+      "id": 30,
+      "category": "licensing",
+      "difficulty": "medium",
+      "priority": "high",
+      "expected_keywords": [
+        "manage",
+        "multiple",
+        "batch",
+        "license"
+      ]
+    }
+  },
+  {
+    "query": "What is PlayReady output control?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 40,
+      "category": "general",
+      "difficulty": "medium",
+      "priority": "high",
+      "expected_keywords": [
+        "output",
+        "control",
+        "display",
+        "HDCP"
+      ]
+    }
+  },
+  {
+    "query": "What is PlayReady minimum requirement?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 50,
+      "category": "general",
+      "difficulty": "medium",
+      "priority": "high",
+      "expected_keywords": [
+        "requirement",
+        "minimum",
+        "spec",
+        "version"
+      ]
+    }
+  },
+  {
+    "query": "What encryption standard does PlayReady use?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 55,
+      "category": "security",
+      "difficulty": "medium",
+      "priority": "high",
+      "expected_keywords": [
+        "standard",
+        "encryption",
+        "AES",
+        "algorithm"
+      ]
+    }
+  },
+  {
+    "query": "What are PlayReady security updates?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 60,
+      "category": "general",
+      "difficulty": "medium",
+      "priority": "high",
+      "expected_keywords": [
+        "update",
+        "security",
+        "patch",
+        "fix"
+      ]
+    }
+  },
+  {
+    "query": "What is PlayReady adaptive bitrate?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 70,
+      "category": "general",
+      "difficulty": "medium",
+      "priority": "high",
+      "expected_keywords": [
+        "adaptive",
+        "bitrate",
+        "quality",
+        "dynamic"
+      ]
+    }
+  },
+  {
+    "query": "How to get PlayReady support?",
+    "response": "PlayReady protects video and audio content through encryption and licensing mechanisms. It ensures that only authorized users can access premium content, and usage rights can be defined per user or device. PlayReady also provides secure streaming capabilities and supports offline content delivery with time-limited access.",
+    "context": [],
+    "metadata": {
+      "id": 75,
+      "category": "compatibility",
+      "difficulty": "medium",
+      "priority": "high",
+      "expected_keywords": [
+        "support",
+        "help",
+        "contact",
+        "service"
+      ]
+    }
+  },
+  {
+    "query": "Why use PlayReady?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 3,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "medium",
+      "expected_keywords": [
+        "security",
+        "protection",
+        "enterprise",
+        "standard"
+      ]
+    }
+  },
+  {
+    "query": "How old is PlayReady?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 6,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "medium",
+      "expected_keywords": [
+        "technology",
+        "Microsoft",
+        "established",
+        "years"
+      ]
+    }
+  },
+  {
+    "query": "Is PlayReady open source?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 9,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "medium",
+      "expected_keywords": [
+        "open",
+        "source",
+        "proprietary",
+        "Microsoft"
+      ]
+    }
+  },
+  {
+    "query": "What is PlayReady Revocation?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 36,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "medium",
+      "expected_keywords": [
+        "revocation",
+        "blacklist",
+        "block",
+        "prevent"
+      ]
+    }
+  },
+  {
+    "query": "Does Windows support PlayReady?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 42,
+      "category": "compatibility",
+      "difficulty": "easy",
+      "priority": "medium",
+      "expected_keywords": [
+        "Windows",
+        "support",
+        "OS",
+        "platform"
+      ]
+    }
+  },
+  {
+    "query": "Does Roku support PlayReady?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 48,
+      "category": "compatibility",
+      "difficulty": "easy",
+      "priority": "medium",
+      "expected_keywords": [
+        "Roku",
+        "streaming",
+        "device",
+        "support"
+      ]
+    }
+  },
+  {
+    "query": "How secure is PlayReady?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 51,
+      "category": "security",
+      "difficulty": "easy",
+      "priority": "medium",
+      "expected_keywords": [
+        "secure",
+        "security",
+        "protection",
+        "level"
+      ]
+    }
+  },
+  {
+    "query": "What is PlayReady compliance?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 57,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "medium",
+      "expected_keywords": [
+        "compliance",
+        "standard",
+        "certification",
+        "requirement"
+      ]
+    }
+  },
+  {
+    "query": "What is PlayReady ROI?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 78,
+      "category": "general",
+      "difficulty": "easy",
+      "priority": "medium",
+      "expected_keywords": [
+        "ROI",
+        "return",
+        "investment",
+        "benefit"
+      ]
+    }
+  },
+  {
+    "query": "What encryption does PlayReady use?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 12,
+      "category": "security",
+      "difficulty": "medium",
+      "priority": "medium",
+      "expected_keywords": [
+        "encryption",
+        "algorithm",
+        "AES",
+        "standard"
+      ]
+    }
+  },
+  {
+    "query": "What are PlayReady error codes?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 18,
+      "category": "general",
+      "difficulty": "medium",
+      "priority": "medium",
+      "expected_keywords": [
+        "error",
+        "code",
+        "troubleshoot",
+        "debug"
+      ]
+    }
+  },
+  {
+    "query": "What are PlayReady licensing models?",
+    "response": "PlayReady is a comprehensive digital rights management (DRM) solution developed by Microsoft. It's designed to protect audio, video, and other digital content from unauthorized access and distribution. PlayReady works across multiple platforms and devices, making it a widely adopted industry standard for content protection.",
+    "context": [],
+    "metadata": {
+      "id": 21,
+      "category": "general",
+      "difficulty": "medium",
+      "priority": "medium",
+      "expected_keywords": [
+        "license",
+        "model",
+        "option",
+        "type"
+      ]
+    }
+  },
+  {
+    "query": "How to setup PlayReady license server?",
+    "response": "PlayReady protects video and audio content through encryption and licensing mechanisms. It ensures that only authorized users can access premium content, and usage rights can be defined per user or device. PlayReady also provides secure streaming capabilities and supports offline content delivery with time-limited access.",
+    "context": [],
+    "metadata": {
+      "id": 24,
+      "category": "licensing",
+      "difficulty": "medium",
+      "priority": "medium",
+      "expected_keywords": [
+        "setup",
+        "configure",
+        "server",
+        "license"
+      ]
+    }
+  },
+  {
+    "query": "Can PlayReady license be transferred?",
+    "response": "PlayReady protects video and audio content through encryption and licensing mechanisms. It ensures that only authorized users can access premium content, and usage rights can be defined per user or device. PlayReady also provides secure streaming capabilities and supports offline content delivery with time-limited access.",
+    "context": [],
+    "metadata": {
+      "id": 27,
+      "category": "licensing",
+      "difficulty": "medium",
+      "priority": "medium",
+      "expected_keywords": [
+        "transfer",
+        "share",
+        "move",
+        "license"
+      ]
+    }
+  }
+]

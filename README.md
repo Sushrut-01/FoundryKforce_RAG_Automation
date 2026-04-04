@@ -1,12 +1,12 @@
-# 🎯 PlayReady RAG Evaluation Framework
+﻿# ðŸŽ¯ PlayReady RAG Evaluation Framework
 
 A comprehensive testing and evaluation framework for PlayReady DRM chatbot using **Azure AI Foundry SDK** with Retrieval-Augmented Generation (RAG) and **Azure Storage Knowledge Base**.
 
-**Status: Production Ready** ✅
+**Status: Production Ready** âœ…
 
 ---
 
-## 📋 Table of Contents
+## ðŸ“‹ Table of Contents
 
 - [Overview](#overview)
 - [Architecture](#architecture)
@@ -22,7 +22,7 @@ A comprehensive testing and evaluation framework for PlayReady DRM chatbot using
 
 ---
 
-## 🎯 Overview
+## ðŸŽ¯ Overview
 
 This framework provides **automated evaluation** of PlayReady DRM chatbot responses using:
 
@@ -34,111 +34,111 @@ This framework provides **automated evaluation** of PlayReady DRM chatbot respon
 
 ### Key Features
 
-✅ **Full Automation**
+âœ… **Full Automation**
 - No manual UI clicks
 - One command evaluation
 - Results saved automatically
 
-✅ **Production-Grade KB**
+âœ… **Production-Grade KB**
 - Azure Storage connected
 - Real PlayReady PDFs
 - Enterprise documents
 
-✅ **Comprehensive Evaluation**
+âœ… **Comprehensive Evaluation**
 - Quality metrics (4)
 - Safety checks (8)
 - RAG metrics (4+)
 - Bias detection (3+)
 
-✅ **Beautiful Results**
+âœ… **Beautiful Results**
 - Professional Foundry UI
 - All metrics visible
 - Easy sharing & comparison
 
 ---
 
-## 🏗️ Architecture
+## ðŸ—ï¸ Architecture
 
 ### System Diagram
 
 ```
-┌──────────────────���─────────────────────────┐
-│ Your Local Machine                         │
-├────────────────────────────────────────────┤
-│                                            │
-│  Test Data (100 queries)                   │
-│  └─ data/test_cases.json                   │
-│                                            │
-│  Generate Responses                        │
-│  └─ scripts/generate_responses.py          │
-│     └─ results/responses.json              │
-│                                            │
-│  Evaluate with SDK (Azure KB)              │
-│  └─ scripts/foundry_evaluate_with_azure_kb.py
-│     ├─ Connects to Foundry (SDK)           │
-│     ├─ Retrieves from Azure Storage KB     │
-│     ├─ Runs 40+ evaluators                 │
-│     └─ results/azure_kb_evaluation_*.json  │
-│                                            │
-└────────────────────┬──────────────────────┘
-                     │ (SDK API calls)
-                     ↓
-┌────────────────────────────────────────────┐
-│ Azure Cloud (Foundry)                      │
-├────────────────────────────────────────────┤
-│                                            │
-│  Foundry Project                           │
-│  ├─ Your AI project                        │
-│  └─ Connected to Azure services            │
-│                                            │
-│  Foundry KB (Knowledge Base)               │
-│  └─ Linked to Azure Storage                │
-│                                            │
-│  Azure Storage Services                    │
-│  └─ PDF Documents                          │
-│     ├─ playready_overview.pdf              │
-│     ├─ playready_licensing.pdf             │
-│     ├─ drm_features.pdf                    │
-│     └─ Other PlayReady docs                │
-│                                            │
-│  Foundry Evaluators                        │
-│  ├─ Quality Metrics                        │
-│  ├─ Safety Evaluations                     │
-│  ├─ RAG Metrics                            │
-│  └─ Bias Detection                         │
-│                                            │
-│  Foundry Dashboard                         │
-│  └─ Results & Visualizations               │
-│                                            │
-└────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ï¿½ï¿½ï¿½â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Your Local Machine                         â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚                                            â”‚
+â”‚  Test Data (100 queries)                   â”‚
+â”‚  â””â”€ data/raw/test_cases.json                   â”‚
+â”‚                                            â”‚
+â”‚  Generate Responses                        â”‚
+â”‚  â””â”€ scripts/generate_responses.py          â”‚
+â”‚     â””â”€ artifacts/latest/responses.json              â”‚
+â”‚                                            â”‚
+â”‚  Run Full Evaluation Pipeline              â”‚
+â”‚  â””â”€ scripts/run_full_evaluation.py        â”‚
+â”‚     â”œâ”€ Loads KB and subsets                â”‚
+â”‚     â”œâ”€ Runs RAGAS + Foundry checks         â”‚
+â”‚     â”œâ”€ Archives previous outputs           â”‚
+â”‚     â””â”€ artifacts/latest/combined_evaluation.json          â”‚
+â”‚                                            â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     â”‚ (SDK API calls)
+                     â†“
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Azure Cloud (Foundry)                      â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚                                            â”‚
+â”‚  Foundry Project                           â”‚
+â”‚  â”œâ”€ Your AI project                        â”‚
+â”‚  â””â”€ Connected to Azure services            â”‚
+â”‚                                            â”‚
+â”‚  Foundry KB (Knowledge Base)               â”‚
+â”‚  â””â”€ Linked to Azure Storage                â”‚
+â”‚                                            â”‚
+â”‚  Azure Storage Services                    â”‚
+â”‚  â””â”€ PDF Documents                          â”‚
+â”‚     â”œâ”€ playready_overview.pdf              â”‚
+â”‚     â”œâ”€ playready_licensing.pdf             â”‚
+â”‚     â”œâ”€ drm_features.pdf                    â”‚
+â”‚     â””â”€ Other PlayReady docs                â”‚
+â”‚                                            â”‚
+â”‚  Foundry Evaluators                        â”‚
+â”‚  â”œâ”€ Quality Metrics                        â”‚
+â”‚  â”œâ”€ Safety Evaluations                     â”‚
+â”‚  â”œâ”€ RAG Metrics                            â”‚
+â”‚  â””â”€ Bias Detection                         â”‚
+â”‚                                            â”‚
+â”‚  Foundry Dashboard                         â”‚
+â”‚  â””â”€ Results & Visualizations               â”‚
+â”‚                                            â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Data Flow
 
 ```
 1. Test Queries (100)
-      ↓
+      â†“
 2. Generate Responses
-      ↓
+      â†“
 3. Evaluate with Azure KB (SDK)
-   ├─ Connect to Foundry
-   ├─ Retrieve from Azure Storage
-   ├─ Run 40+ evaluators
-   └─ Save results locally
-      ↓
+   â”œâ”€ Connect to Foundry
+   â”œâ”€ Retrieve from Azure Storage
+   â”œâ”€ Run 40+ evaluators
+   â””â”€ Save results locally
+      â†“
 4. View in Foundry UI
-   ├─ Quality metrics
-   ├─ Safety checks
-   ├─ RAG metrics
-   ├─ Bias detection
-   └─ Beautiful charts
-      ↓
+   â”œâ”€ Quality metrics
+   â”œâ”€ Safety checks
+   â”œâ”€ RAG metrics
+   â”œâ”€ Bias detection
+   â””â”€ Beautiful charts
+      â†“
 5. Download/Share Results
 ```
 
 ---
 
-## 🚀 Quick Start
+## ðŸš€ Quick Start
 
 ### Prerequisites
 
@@ -162,7 +162,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # 4. Verify installation
-python -c "from azure.ai.projects import AIProjectClient; print('✅ All packages installed')"
+python -c "from azure.ai.projects import AIProjectClient; print('âœ… All packages installed')"
 ```
 
 ### Configuration (2 minutes)
@@ -210,19 +210,19 @@ LOG_FILE=./logs/framework.log
 # Step 1: Generate responses (1 minute)
 python scripts/generate_responses.py
 
-# Step 2: Evaluate with Azure KB (5-10 minutes)
-python scripts/foundry_evaluate_with_azure_kb.py
+# Step 2: Run full evaluation pipeline (5-10 minutes)
+python scripts/run_full_evaluation.py --suite full
 
 # Step 3: View results
 # Open browser: https://ai.azure.com
 # See beautiful Foundry dashboard!
 ```
 
-**That's it! All automated!** ✅
+**That's it! All automated!** âœ…
 
 ---
 
-## 📖 Installation
+## ðŸ“– Installation
 
 ### Step 1: Install Dependencies
 
@@ -243,7 +243,7 @@ pip list | find "azure"
 # Should show: azure-ai-projects, azure-identity, azure-ai-evaluation
 
 # Test import
-python -c "from azure.ai.projects import AIProjectClient; print('✅ OK')"
+python -c "from azure.ai.projects import AIProjectClient; print('âœ… OK')"
 ```
 
 ### Step 3: Activate Virtual Environment
@@ -260,7 +260,7 @@ source venv/bin/activate
 
 ---
 
-## 🔧 Configuration
+## ðŸ”§ Configuration
 
 ### .env File
 
@@ -278,12 +278,12 @@ notepad .env
 
 | Variable | Source | Required |
 |----------|--------|----------|
-| `AZURE_AI_PROJECT_ENDPOINT` | Foundry Project Settings | ✅ Yes |
-| `AZURE_SUBSCRIPTION_ID` | Azure Portal → Subscriptions | ✅ Yes |
-| `AZURE_RESOURCE_GROUP` | Azure Portal → Resource Groups | ✅ Yes |
-| `AZURE_OPENAI_API_KEY` | Azure Portal → OpenAI → Keys | ✅ Yes |
-| `AZURE_OPENAI_ENDPOINT` | Azure Portal → OpenAI → Endpoint | ✅ Yes |
-| `AZURE_OPENAI_DEPLOYMENT_NAME` | Azure Portal → OpenAI → Deployments | ✅ Yes |
+| `AZURE_AI_PROJECT_ENDPOINT` | Foundry Project Settings | âœ… Yes |
+| `AZURE_SUBSCRIPTION_ID` | Azure Portal â†’ Subscriptions | âœ… Yes |
+| `AZURE_RESOURCE_GROUP` | Azure Portal â†’ Resource Groups | âœ… Yes |
+| `AZURE_OPENAI_API_KEY` | Azure Portal â†’ OpenAI â†’ Keys | âœ… Yes |
+| `AZURE_OPENAI_ENDPOINT` | Azure Portal â†’ OpenAI â†’ Endpoint | âœ… Yes |
+| `AZURE_OPENAI_DEPLOYMENT_NAME` | Azure Portal â†’ OpenAI â†’ Deployments | âœ… Yes |
 
 ### How to Get Each Value
 
@@ -330,7 +330,7 @@ notepad .env
 
 ---
 
-## 📊 Usage
+## ðŸ“Š Usage
 
 ### Complete Workflow
 
@@ -339,69 +339,69 @@ notepad .env
 python scripts/generate_responses.py
 
 # Output:
-# 🔍 Loading test cases...
-# ✅ Loaded 100 test cases
-# 📝 Generating 100 responses...
-# ✅ Generated all 100 responses!
-# 💾 Saved 100 responses to: results/responses.json
+# ðŸ” Loading test cases...
+# âœ… Loaded 100 test cases
+# ðŸ“ Generating 100 responses...
+# âœ… Generated all 100 responses!
+# ðŸ’¾ Saved 100 responses to: artifacts/latest/responses.json
 ```
 
 ```bash
-# Step 2: Evaluate with Azure KB (Main Step!)
-python scripts/foundry_evaluate_with_azure_kb.py
+# Step 2: Run full evaluation pipeline (Main Step!)
+python scripts/run_full_evaluation.py --suite full
 
 # Output:
-# 🚀 Foundry SDK + Azure Storage KB - Evaluation
-# Knowledge Base: Azure Storage (Production)
-# SDK: Foundry AI Evaluation
+# RAG Evaluation Pipeline - FULL Suite
+# Uses local KB + RAGAS + Foundry Official evaluators
+# Archives old runs automatically
 #
-# 📖 Loading responses...
-# ✅ Loaded 100 responses
+# ðŸ“– Loading responses...
+# âœ… Loaded 100 responses
 #
-# 🔌 Connecting to Foundry...
-# ✅ Connected to Foundry successfully!
-# ✅ Connected to Azure Storage KB (via Foundry)
+# ðŸ”Œ Connecting to Foundry...
+# âœ… Connected to Foundry successfully!
+# âœ… Connected to Azure Storage KB (via Foundry)
 #
-# 🚀 Starting batch evaluation with Azure KB...
-# 📊 Evaluating 100 responses
+# ðŸš€ Starting batch evaluation with Azure KB...
+# ðŸ“Š Evaluating 100 responses
 #
-# 🔍 Evaluating: What is PlayReady?...
-#    📚 Retrieving from Azure KB...
-#    ✅ Retrieved 3 chunks from Azure KB
-#    📊 Quality Metrics...
-#      ✅ Groundedness: 0.92
-#      ✅ Coherence: 0.88
-#      ✅ Fluency: 0.91
-#      ✅ Similarity: 0.85
-#    🔒 Safety Checks...
-#      ✅ Hate/Unfairness: PASS
-#      ✅ Sexual Content: PASS
-#      ✅ Violence: PASS
-#      ✅ Self-harm: PASS
+# ðŸ” Evaluating: What is PlayReady?...
+#    ðŸ“š Retrieving from Azure KB...
+#    âœ… Retrieved 3 chunks from Azure KB
+#    ðŸ“Š Quality Metrics...
+#      âœ… Groundedness: 0.92
+#      âœ… Coherence: 0.88
+#      âœ… Fluency: 0.91
+#      âœ… Similarity: 0.85
+#    ðŸ”’ Safety Checks...
+#      âœ… Hate/Unfairness: PASS
+#      âœ… Sexual Content: PASS
+#      âœ… Violence: PASS
+#      âœ… Self-harm: PASS
 #
-# ✅ Completed 100/100 evaluations
+# âœ… Completed 100/100 evaluations
 #
-# 💾 Results saved to: results/azure_kb_evaluation_results_20260328_120000.json
+# ðŸ’¾ Results saved to: artifacts/latest/foundry_official_evaluation.json
 #
-# 📊 EVALUATION STATISTICS (Azure Storage KB)
+# ðŸ“Š EVALUATION STATISTICS (Azure Storage KB)
 # Quality Metrics (Average):
 #   Groundedness: 0.92 (Knowledge from Azure KB)
 #   Coherence: 0.88
 #   Fluency: 0.91
 #   Similarity: 0.85
 #
-# 🔒 Safety Checks:
+# ðŸ”’ Safety Checks:
 #   Hate/Unfairness: 100/100 (100%)
 #   Sexual Content: 100/100 (100%)
 #   Violence: 100/100 (100%)
 #   Self-harm: 100/100 (100%)
 #
-# 📚 Knowledge Base Info:
+# ðŸ“š Knowledge Base Info:
 #   Source: Azure Storage (via Foundry)
 #   Type: Production KB
-#   Status: ✅ Connected and active
+#   Status: âœ… Connected and active
 #
-# ✅ Evaluation complete!
+# âœ… Evaluation complete!
 ```
 
 ### View Results in Foundry UI
@@ -413,19 +413,19 @@ python scripts/foundry_evaluate_with_azure_kb.py
 4. Navigate to: Experiments
 5. Find your evaluation run
 6. View results:
-   ✅ All 40+ metrics
-   ✅ Quality scores (Groundedness, Coherence, Fluency, Similarity)
-   ✅ Safety checks (Hate, Sexual, Violence, Self-harm)
-   ✅ RAG metrics (Context Precision, Recall, Faithfulness)
-   ✅ Bias detection (Gender, Racial, Age)
-   ✅ Beautiful charts & graphs
-   ✅ Detailed breakdown per test case
+   âœ… All 40+ metrics
+   âœ… Quality scores (Groundedness, Coherence, Fluency, Similarity)
+   âœ… Safety checks (Hate, Sexual, Violence, Self-harm)
+   âœ… RAG metrics (Context Precision, Recall, Faithfulness)
+   âœ… Bias detection (Gender, Racial, Age)
+   âœ… Beautiful charts & graphs
+   âœ… Detailed breakdown per test case
 7. Download or share results
 ```
 
 ---
 
-## 📊 Evaluation Metrics
+## ðŸ“Š Evaluation Metrics
 
 ### Quality Metrics (4)
 
@@ -470,69 +470,70 @@ python scripts/foundry_evaluate_with_azure_kb.py
 
 ```
 Quality Metrics:
-  Groundedness: 0.90-0.95 ✅
-  Coherence: 0.85-0.95 ✅
-  Fluency: 0.85-0.95 ✅
-  Similarity: 0.80-0.90 ✅
+  Groundedness: 0.90-0.95 âœ…
+  Coherence: 0.85-0.95 âœ…
+  Fluency: 0.85-0.95 âœ…
+  Similarity: 0.80-0.90 âœ…
 
 Safety Checks:
-  All: PASS (100%) ✅
+  All: PASS (100%) âœ…
 
 RAG Metrics:
-  Context Precision: 0.85-0.95 ✅
-  Context Recall: 0.80-0.90 ✅
-  Faithfulness: 0.85-0.95 ✅
-  Answer Relevance: 0.80-0.90 ✅
+  Context Precision: 0.85-0.95 âœ…
+  Context Recall: 0.80-0.90 âœ…
+  Faithfulness: 0.85-0.95 âœ…
+  Answer Relevance: 0.80-0.90 âœ…
 
 Bias Detection:
-  All: PASS ✅
+  All: PASS âœ…
 ```
 
 ---
 
-## 📁 Project Structure
+## ðŸ“ Project Structure
 
 ```
 foundry-playready-rag-testing/
-│
-├── 📄 README.md                          # This file
-├── 📄 requirements.txt                   # Python dependencies
-├── 📄 pytest.ini                         # Test configuration
-├── 📄 .gitignore                         # Git ignore rules
-│
-├── 🔑 .env                               # Your credentials (don't commit!)
-├── 🔑 .env.example                       # Credential template
-│
-├── 📂 scripts/                           # Automation scripts
-│   ├── __init__.py
-│   ├── generate_test_cases.py            # Generate 100 test queries
-│   ├── generate_responses.py             # Generate responses
-│   ├── foundry_evaluate_with_azure_kb.py # ⭐ MAIN: SDK evaluation
-│   ├── prepare_foundry_dataset.py        # Format for Foundry (optional)
-│   └── upload_to_foundry.py              # Upload local results (optional)
-│
-├── 📂 data/                              # Test data
-│   └── test_cases.json                   # 100 test queries
-│
-├── 📂 results/                           # Evaluation results
-│   ├── responses.json                    # Generated responses
-│   └── azure_kb_evaluation_results_*.json # Evaluation results
-│
-├── 📂 src/                               # Source code
-│   ├── core/
-│   │   ├── config.py                     # Configuration loader
-│   │   └── foundry_uploader.py           # Foundry uploader
-│   ├── evaluators/
-│   │   └── evaluation_metrics.py         # Local evaluation metrics
-│   └── utils/
-│       └── logger.py                     # Logging utilities
-│
-├── 📂 tests/                             # Test suite
-│   └── integration/
-│       └── test_playready_qa.py          # Integration tests
-│
-└── 📂 logs/                              # Log files (auto-created)
-    └── framework.log
+â”‚
+â”œâ”€â”€ ðŸ“„ README.md                          # This file
+â”œâ”€â”€ ðŸ“„ requirements.txt                   # Python dependencies
+â”œâ”€â”€ ðŸ“„ pytest.ini                         # Test configuration
+â”œâ”€â”€ ðŸ“„ .gitignore                         # Git ignore rules
+â”‚
+â”œâ”€â”€ ðŸ”‘ .env                               # Your credentials (don't commit!)
+â”œâ”€â”€ ðŸ”‘ .env.example                       # Credential template
+â”‚
+â”œâ”€â”€ ðŸ“‚ scripts/                           # Automation scripts
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”œâ”€â”€ generate_test_cases.py            # Generate 100 test queries
+â”‚   â”œâ”€â”€ generate_responses.py             # Generate responses
+â”‚   â”œâ”€â”€ run_full_evaluation.py            # â­ MAIN: full pipeline runner
+â”‚   â”œâ”€â”€ foundry_evaluate_ragas.py         # RAGAS evaluation
+â”‚   â”œâ”€â”€ foundry_evaluate_official.py      # Foundry official evaluation
+â”‚   â””â”€â”€ upload_to_foundry.py              # Upload local results (optional)
+â”‚
+â”œâ”€â”€ ðŸ“‚ data/                              # Test data
+â”‚   â””â”€â”€ test_cases.json                   # 100 test queries
+â”‚
+â”œâ”€â”€ ðŸ“‚ artifacts/latest/                           # Evaluation results
+â”‚   â”œâ”€â”€ responses.json                    # Generated responses
+â”‚   â””â”€â”€ foundry_official_evaluation.json # Evaluation results
+â”‚
+â”œâ”€â”€ ðŸ“‚ src/                               # Source code
+â”‚   â”œâ”€â”€ core/
+â”‚   â”‚   â”œâ”€â”€ config.py                     # Configuration loader
+â”‚   â”‚   â””â”€â”€ foundry_uploader.py           # Foundry uploader
+â”‚   â”œâ”€â”€ evaluators/
+â”‚   â”‚   â””â”€â”€ evaluation_metrics.py         # Local evaluation metrics
+â”‚   â””â”€â”€ utils/
+â”‚       â””â”€â”€ logger.py                     # Logging utilities
+â”‚
+â”œâ”€â”€ ðŸ“‚ tests/                             # Test suite
+â”‚   â””â”€â”€ integration/
+â”‚       â””â”€â”€ test_playready_qa.py          # Integration tests
+â”‚
+â””â”€â”€ ðŸ“‚ logs/                              # Log files (auto-created)
+    â””â”€â”€ framework.log
 ```
 
 ### Optional Folders (Can Add Later)
@@ -540,17 +541,17 @@ foundry-playready-rag-testing/
 These folders are optional and can be created when needed for enhanced functionality:
 
 ```
-📂 src/agents/                           # Optional - Agent implementations
-   └─ Can add custom agents here
+ðŸ“‚ src/agents/                           # Optional - Agent implementations
+   â””â”€ Can add custom agents here
 
-📂 src/utils/                            # Optional - Utility functions
-   └─ Can add helper functions here
+ðŸ“‚ src/utils/                            # Optional - Utility functions
+   â””â”€ Can add helper functions here
 
-📂 tests/unit/                           # Optional - Unit tests
-   └─ Can add unit test files here
+ðŸ“‚ tests/unit/                           # Optional - Unit tests
+   â””â”€ Can add unit test files here
 
-📂 tests/fixtures/                       # Optional - Test fixtures
-   └─ Can add test data and fixtures here
+ðŸ“‚ tests/fixtures/                       # Optional - Test fixtures
+   â””â”€ Can add test data and fixtures here
 ```
 
 ### Optional Configuration Files
@@ -558,40 +559,40 @@ These folders are optional and can be created when needed for enhanced functiona
 Configuration files for different environments:
 
 ```
-⚠️ configs/dev/config.yaml               # Optional - Development config
-⚠️ configs/prod/config.yaml              # Optional - Production config
-⚠️ configs/test/config.yaml              # Optional - Test config
-✅ configs/local/config.yaml             # Present - Local environment config
+âš ï¸ configs/dev/config.yaml               # Optional - Development config
+âš ï¸ configs/prod/config.yaml              # Optional - Production config
+âš ï¸ configs/test/config.yaml              # Optional - Test config
+âœ… configs/local/config.yaml             # Present - Local environment config
 ```
 
 **Note:** The `configs/local/config.yaml` is already present and sufficient for basic usage. Other config files can be created when deploying to multiple environments (dev, prod, test stages).
 
 ---
 
-## 🔄 Workflow
+## ðŸ”„ Workflow
 
 ### Development Workflow
 
 ```
 1. Test Case Generation
-   └─ python scripts/generate_test_cases.py
-   └─ Output: data/test_cases.json (100 queries)
+   â””â”€ python scripts/generate_test_cases.py
+   â””â”€ Output: data/raw/test_cases.json (100 queries)
 
 2. Response Generation
-   └─ python scripts/generate_responses.py
-   └─ Output: results/responses.json (100 Q&A)
+   â””â”€ python scripts/generate_responses.py
+   â””â”€ Output: artifacts/latest/responses.json (100 Q&A)
 
-3. Evaluate with Azure KB (MAIN STEP)
-   └─ python scripts/foundry_evaluate_with_azure_kb.py
-   └─ Connects to Foundry SDK
-   └─ Retrieves from Azure Storage KB
-   └─ Runs 40+ evaluators
-   └─ Output: results/azure_kb_evaluation_results_*.json
+3. Run full evaluation pipeline (MAIN STEP)
+   â””â”€ python scripts/run_full_evaluation.py --suite full
+   â””â”€ Loads KB context and subsets
+   â””â”€ Runs RAGAS + Foundry evaluators
+   â””â”€ Auto-archives old results
+   â””â”€ Output: artifacts/latest/combined_evaluation.json
 
 4. View Results
-   └─ Go to: https://ai.azure.com
-   └─ See beautiful dashboard
-   └─ Download or share
+   â””â”€ Go to: https://ai.azure.com
+   â””â”€ See beautiful dashboard
+   â””â”€ Download or share
 ```
 
 ### Production Workflow
@@ -607,7 +608,7 @@ Same as development, but:
 
 ---
 
-## 🐛 Troubleshooting
+## ðŸ› Troubleshooting
 
 ### Issue: SDK Installation Failed
 
@@ -678,9 +679,9 @@ Error: "Evaluation timed out"
 
 Solution:
 1. Start with fewer test cases:
-   - Edit foundry_evaluate_with_azure_kb.py
-   - Change: limit=10 (test with 10 first)
-   - Then: limit=None (for all 100)
+   - Run: `python scripts/run_full_evaluation.py --suite smoke`
+   - Then: `python scripts/run_full_evaluation.py --suite regression`
+   - Finally: `python scripts/run_full_evaluation.py --suite full`
    
 2. Check network:
    - Verify internet speed
@@ -733,7 +734,7 @@ Solution:
 
 ---
 
-## 📞 Support & Help
+## ðŸ“ž Support & Help
 
 ### Documentation
 
@@ -763,23 +764,23 @@ type logs/framework.log | more
 
 ---
 
-## 📝 Version Information
+## ðŸ“ Version Information
 
 - **Version**: 2.0.0 (Azure KB + SDK Edition)
 - **Last Updated**: 2026-03-28
-- **Status**: Production Ready ✅
+- **Status**: Production Ready âœ…
 - **Python**: 3.8+
 - **Azure SDK**: Latest
 
 ### What's New in 2.0.0
 
-- ✅ Full Foundry SDK integration
-- ✅ Azure Storage KB support
-- ✅ 40+ evaluation metrics (auto)
-- ✅ No manual UI clicks needed
-- ✅ 100% automation
-- ✅ Beautiful Foundry dashboard
-- ✅ Production-grade evaluation
+- âœ… Full Foundry SDK integration
+- âœ… Azure Storage KB support
+- âœ… 40+ evaluation metrics (auto)
+- âœ… No manual UI clicks needed
+- âœ… 100% automation
+- âœ… Beautiful Foundry dashboard
+- âœ… Production-grade evaluation
 
 ### Changelog
 
@@ -798,13 +799,13 @@ type logs/framework.log | more
 
 ---
 
-## 📄 License
+## ðŸ“„ License
 
 Part of Azure AI Foundry integration project.
 
 ---
 
-## 👥 Contributing
+## ðŸ‘¥ Contributing
 
 This is a Foundry evaluation framework. For improvements:
 
@@ -815,7 +816,7 @@ This is a Foundry evaluation framework. For improvements:
 
 ---
 
-## 📞 Contact
+## ðŸ“ž Contact
 
 For questions or support:
 - Check README troubleshooting
@@ -825,6 +826,7 @@ For questions or support:
 
 ---
 
-**Happy Evaluating! 🚀**
+**Happy Evaluating! ðŸš€**
 
 For the latest updates, check: https://ai.azure.com
+

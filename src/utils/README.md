@@ -1,4 +1,4 @@
-# Optional Utility Functions
+﻿# Optional Utility Functions
 
 ## Utils Module
 
@@ -30,3 +30,5 @@ result = my_utility.process_data(data)
 ```
 
 To add utilities here, create new Python files in this directory.
+
+

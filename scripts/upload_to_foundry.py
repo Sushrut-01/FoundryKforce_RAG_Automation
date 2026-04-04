@@ -28,7 +28,7 @@ async def main():
     )
     parser.add_argument(
         "--results",
-        default="./results/test_results.json",
+        default="./artifacts/latest/test_results.json",
         help="Path to results file"
     )
     parser.add_argument(

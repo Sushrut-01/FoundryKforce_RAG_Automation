@@ -1,0 +1,24 @@
+{
+  "start_time": "2026-04-04T03:57:01.453497",
+  "phases": {
+    "Load KB & Populate Context": {
+      "status": "success",
+      "return_code": 0
+    },
+    "RAGAS KB Quality Evaluation": {
+      "status": "success",
+      "return_code": 0
+    },
+    "Foundry Official Evaluation": {
+      "status": "failed",
+      "return_code": 1,
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\scripts\\foundry_evaluate_official.py\", line 11, in <module>\n    from azure.identity import DefaultAzureCredential\nModuleNotFoundError: No module named 'azure'\n"
+    },
+    "Generate Combined Report": {
+      "status": "success",
+      "return_code": 0
+    }
+  },
+  "status": "failed",
+  "end_time": "2026-04-04T03:57:04.334213"
+}

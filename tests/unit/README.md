@@ -1,4 +1,4 @@
-# Unit Tests
+﻿# Unit Tests
 
 Optional folder for unit tests of individual components.
 
@@ -6,10 +6,10 @@ Optional folder for unit tests of individual components.
 
 ```
 tests/unit/
-├── test_config.py           # Config loading tests
-├── test_evaluators.py       # Evaluator tests
-├── test_utils.py            # Utility function tests
-└── conftest.py              # pytest configuration
+â”œâ”€â”€ test_config.py           # Config loading tests
+â”œâ”€â”€ test_evaluators.py       # Evaluator tests
+â”œâ”€â”€ test_utils.py            # Utility function tests
+â””â”€â”€ conftest.py              # pytest configuration
 ```
 
 ## Running Unit Tests
@@ -38,3 +38,5 @@ def test_config_loading():
 ```
 
 To add unit tests, create new test files (test_*.py) in this directory.
+
+

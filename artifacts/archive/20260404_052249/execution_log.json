@@ -1,0 +1,54 @@
+{
+  "start_time": "2026-04-04T05:22:05.557894",
+  "suite": "smoke",
+  "active_input": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\data\\test_cases_smoke.json",
+  "kb_output": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\data\\test_cases_smoke_with_kb.json",
+  "phases": {
+    "Load KB & Populate Context": {
+      "status": "success",
+      "return_code": 0,
+      "stdout_tail": "Warning: PyPDF2 not available. Install: pip install PyPDF2\n"
+    },
+    "RAGAS KB Quality Evaluation": {
+      "status": "success",
+      "return_code": 0,
+      "stdout_tail": "RAG EVALUATION REPORT\n================================================================================\n\nModel: gpt-4\nMode: MOCK RAGAS (heuristic)\nTotal Test Cases: 10\nValid Cases: 10\n\nStatus Breakdown:\n  FAIL: 6/10 (60.0%)\n  WARNING: 4/10 (40.0%)\n\nAverage RAGAS Metrics (0.0-1.0 scale):\n  faithfulness        : 0.5724 [#####     ]\n  answer_relevance    : 0.2350 [##        ]\n  context_recall      : 0.4033 [####      ]\n  context_precision   : 0.8500 [########  ]\n  answer_correctness  : 0.7500 [#######   ]\n\n================================================================================\nRAGAS Metrics Definitions:\n  - Faithfulness: Response grounded in retrieved context\n  - Answer Relevance: Response directly addresses query\n  - Context Recall: Relevant context documents retrieved\n  - Context Precision: All retrieved context is relevant\n  - Answer Correctness: Answer factually accurate\n================================================================================\n\n\nSummary: 0 PASS, 6 FAIL\n"
+    },
+    "Foundry Official Evaluation": {
+      "status": "failed",
+      "return_code": 1,
+      "error": "2026-04-04 05:22:12,151 - __main__ - INFO - Loaded 10 test cases\n2026-04-04 05:22:12,151 - __main__ - INFO - Foundry credentials not available. Using mock evaluation.\n2026-04-04 05:22:12,151 - __main__ - INFO - Starting batch evaluation of 10 cases\n2026-04-04 05:22:12,152 - __main__ - INFO - Completed batch evaluation - 10 cases\n2026-04-04 05:22:12,160 - __main__ - INFO - \\u2713 Results saved to C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\results\\foundry_official_evaluation.json\n2026-04-04 05:22:12,273 - __main__ - INFO - Excel report saved to C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\results\\foundry_official_evaluation.xlsx\nTraceback (most recent call last):\n  File \"C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\scripts\\foundry_evaluate_official.py\", line 574, in <module>\n    sys.exit(main())\n             ~~~~^^\n  File \"C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\scripts\\foundry_evaluate_official.py\", line 569, in main\n    print(f\"\\n\\u2713 Summary: {pass_count} PASS, {fail_count} FAIL\")\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\SushrutNistane\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\u2713' in position 2: character maps to <undefined>\n"
+    },
+    "Generate Combined Report": {
+      "status": "success",
+      "return_code": 0,
+      "stdout_tail": ""
+    }
+  },
+  "status": "failed",
+  "subset_counts": {
+    "smoke": 10,
+    "regression": 30,
+    "full": 100
+  },
+  "active_case_count": 10,
+  "archive": {
+    "timestamp": "20260404_052205",
+    "results_archive": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\results_archive\\20260404_052205",
+    "test_cases_archive": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\test_cases_archive\\20260404_052205",
+    "archived_results": [
+      "ragas_evaluation.json",
+      "ragas_evaluation.xlsx",
+      "foundry_official_evaluation.json",
+      "foundry_official_evaluation.xlsx",
+      "combined_evaluation.json",
+      "combined_evaluation.xlsx",
+      "execution_log.json"
+    ],
+    "archived_test_cases": [
+      "test_cases_smoke.json"
+    ]
+  },
+  "evaluation_input": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\data\\test_cases_smoke_with_kb.json",
+  "end_time": "2026-04-04T05:22:13.370721"
+}

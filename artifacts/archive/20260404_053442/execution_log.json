@@ -1,0 +1,55 @@
+{
+  "start_time": "2026-04-04T05:22:49.847880",
+  "suite": "smoke",
+  "active_input": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\data\\test_cases_smoke.json",
+  "kb_output": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\data\\test_cases_smoke_with_kb.json",
+  "phases": {
+    "Load KB & Populate Context": {
+      "status": "success",
+      "return_code": 0,
+      "stdout_tail": "Warning: PyPDF2 not available. Install: pip install PyPDF2\n"
+    },
+    "RAGAS KB Quality Evaluation": {
+      "status": "success",
+      "return_code": 0,
+      "stdout_tail": "RAG EVALUATION REPORT\n================================================================================\n\nModel: gpt-4\nMode: MOCK RAGAS (heuristic)\nTotal Test Cases: 10\nValid Cases: 10\n\nStatus Breakdown:\n  FAIL: 6/10 (60.0%)\n  WARNING: 4/10 (40.0%)\n\nAverage RAGAS Metrics (0.0-1.0 scale):\n  faithfulness        : 0.5724 [#####     ]\n  answer_relevance    : 0.2350 [##        ]\n  context_recall      : 0.4033 [####      ]\n  context_precision   : 0.8500 [########  ]\n  answer_correctness  : 0.7500 [#######   ]\n\n================================================================================\nRAGAS Metrics Definitions:\n  - Faithfulness: Response grounded in retrieved context\n  - Answer Relevance: Response directly addresses query\n  - Context Recall: Relevant context documents retrieved\n  - Context Precision: All retrieved context is relevant\n  - Answer Correctness: Answer factually accurate\n================================================================================\n\n\nSummary: 0 PASS, 6 FAIL\n"
+    },
+    "Foundry Official Evaluation": {
+      "status": "success",
+      "return_code": 0,
+      "stdout_tail": "alid Cases: 10\n\nStatus Breakdown:\n  PASS: 10/10 (100.0%)\n\nAverage Quality/Safety Scores (0.0-1.0 scale):\n  quality_score       : 1.0000 [##########]\n  safety_score        : 1.0000 [##########]\n  average_score       : 1.0000 [##########]\n\nAverage Safety Severity (0-7 scale, 0=safe):\n  Violence            : 0.00\n  Self Harm           : 0.00\n  Hate Unfairness     : 0.00\n  Sexual              : 0.00\n\n================================================================================\nFoundry Official Evaluators:\n  Quality Metrics (PASS/FAIL):\n    - Task Adherence: Response follows instructions\n    - Coherence: Response is clear and structured\n  Safety Metrics (0-7 severity, 0=safe):\n    - Violence, Self-Harm, Hate/Unfairness, Sexual\n  Agent-Specific (PASS/FAIL):\n    - Prohibited Actions, Sensitive Data Leakage\n  Specialized (PASS/FAIL):\n    - Malicious Behavior, Code Execution, Tool Use\n================================================================================\n\n\nSummary: 10 PASS, 0 FAIL\n"
+    },
+    "Generate Combined Report": {
+      "status": "success",
+      "return_code": 0,
+      "stdout_tail": ""
+    }
+  },
+  "status": "success",
+  "subset_counts": {
+    "smoke": 10,
+    "regression": 30,
+    "full": 100
+  },
+  "active_case_count": 10,
+  "archive": {
+    "timestamp": "20260404_052249",
+    "results_archive": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\results_archive\\20260404_052249",
+    "test_cases_archive": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\test_cases_archive\\20260404_052249",
+    "archived_results": [
+      "ragas_evaluation.json",
+      "ragas_evaluation.xlsx",
+      "foundry_official_evaluation.json",
+      "foundry_official_evaluation.xlsx",
+      "combined_evaluation.json",
+      "combined_evaluation.xlsx",
+      "execution_log.json"
+    ],
+    "archived_test_cases": [
+      "test_cases_smoke.json",
+      "test_cases_smoke_with_kb.json"
+    ]
+  },
+  "evaluation_input": "C:\\Users\\SushrutNistane\\foundry-playready-rag-testing\\data\\test_cases_smoke_with_kb.json",
+  "end_time": "2026-04-04T05:22:58.027489"
+}

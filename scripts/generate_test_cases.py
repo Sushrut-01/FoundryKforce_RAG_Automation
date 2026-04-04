@@ -167,7 +167,7 @@ def generate_test_cases(count=100):
     
     return test_cases
 
-def save_test_cases(test_cases, filename="data/test_cases.json"):
+def save_test_cases(test_cases, filename="data/raw/test_cases.json"):
     """Save test cases to JSON file"""
     data = {
         "test_suite": "PlayReady RAG QA Testing",

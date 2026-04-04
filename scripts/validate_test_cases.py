@@ -138,8 +138,8 @@ def main():
     
     # Check different possible locations
     possible_paths = [
-        base_path / "data" / "test_cases_formatted.json",
-        base_path / "data" / "test_cases.json",
+        base_path / "data" / "processed" / "test_cases_formatted.json",
+        base_path / "data" / "raw" / "test_cases.json",
     ]
     
     test_cases_path = None

@@ -55,7 +55,7 @@ def main():
     """Main execution function."""
     
     # Load test cases
-    test_cases_path = Path(__file__).parent.parent / "data" / "test_cases.json"
+    test_cases_path = Path(__file__).parent.parent / "data" / "raw" / "test_cases.json"
     
     try:
         with open(test_cases_path, 'r') as f:
@@ -90,7 +90,7 @@ def main():
             print(f"✓ Generated response {i}/{len(test_cases)}: {query[:50]}...")
     
     # Save responses
-    responses_path = Path(__file__).parent.parent / "results" / "responses.json"
+    responses_path = Path(__file__).parent.parent / "artifacts" / "latest" / "responses.json"
     responses_path.parent.mkdir(parents=True, exist_ok=True)
     
     with open(responses_path, 'w') as f:

@@ -1,4 +1,4 @@
-# Test Fixtures
+﻿# Test Fixtures
 
 Optional folder for test data and fixtures.
 
@@ -6,12 +6,12 @@ Optional folder for test data and fixtures.
 
 ```
 tests/fixtures/
-├── data/                    # Test data files
-│   ├── test_queries.json
-│   ├── test_responses.json
-│   └── sample_kb_docs.json
-├── mocks/                   # Mock data
-└── __init__.py
+â”œâ”€â”€ data/                    # Test data files
+â”‚   â”œâ”€â”€ test_queries.json
+â”‚   â”œâ”€â”€ test_responses.json
+â”‚   â””â”€â”€ sample_kb_docs.json
+â”œâ”€â”€ mocks/                   # Mock data
+â””â”€â”€ __init__.py
 ```
 
 ## Using Fixtures
@@ -52,3 +52,5 @@ EOF
 ```
 
 To add fixtures, create new files in this directory.
+
+

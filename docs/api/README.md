@@ -1,4 +1,4 @@
-# API Documentation
+﻿# API Documentation
 
 ## Overview
 
@@ -37,9 +37,9 @@ from scripts.merge_responses_into_testcases import merge_responses_into_testcase
 from pathlib import Path
 
 formatted = merge_responses_into_testcases(
-    test_cases_path=Path("data/test_cases.json"),
-    responses_path=Path("results/responses.json"),
-    output_path=Path("data/test_cases_formatted.json")
+    test_cases_path=Path("data/raw/test_cases.json"),
+    responses_path=Path("artifacts/latest/responses.json"),
+    output_path=Path("data/processed/test_cases_formatted.json")
 )
 ```
 
@@ -53,7 +53,7 @@ from scripts.validate_test_cases import validate_foundry_sdk_format
 from pathlib import Path
 
 results = validate_foundry_sdk_format(
-    Path("data/test_cases_formatted.json")
+    Path("data/processed/test_cases_formatted.json")
 )
 ```
 
@@ -130,7 +130,7 @@ results = validate_foundry_sdk_format(
 {
   "status": "success",
   "responses_generated": 3,
-  "file_path": "results/responses.json"
+  "file_path": "artifacts/latest/responses.json"
 }
 ```
 
@@ -140,7 +140,7 @@ results = validate_foundry_sdk_format(
 **Request:**
 ```json
 {
-  "file_path": "data/test_cases_formatted.json"
+  "file_path": "data/processed/test_cases_formatted.json"
 }
 ```
 
@@ -161,7 +161,7 @@ results = validate_foundry_sdk_format(
 **Request:**
 ```json
 {
-  "test_file": "data/test_cases_formatted.json",
+  "test_file": "data/processed/test_cases_formatted.json",
   "use_azure_kb": true,
   "output_format": "json"
 }
@@ -173,7 +173,7 @@ results = validate_foundry_sdk_format(
   "status": "success",
   "evaluation_id": "eval_123456",
   "total_cases": 100,
-  "results_file": "results/evaluation_results.json"
+  "results_file": "artifacts/latest/evaluation_results.json"
 }
 ```
 
@@ -193,7 +193,7 @@ results = validate_foundry_sdk_format(
 {
   "error": "NotFound",
   "message": "Test file not found",
-  "path": "data/test_cases.json"
+  "path": "data/raw/test_cases.json"
 }
 ```
 
@@ -229,3 +229,5 @@ Updates and changes are documented in [CHANGELOG](../CHANGELOG.md)
 ---
 
 Last Updated: April 2026
+
+
